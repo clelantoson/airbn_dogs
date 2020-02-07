@@ -1,24 +1,19 @@
 # README
+Required
+Ruby version 2.5.1
+Rails version 5.2.4, >= 5.2.4.1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Install
+`git clone git@github.com/clelantoson/airbn_dogs.git`
+`cd airbn_dogs`
+`bundle install`
+`rails db:reset`
+`rails db:migrate`
+`rails db:seed`
+`rails c`
+## Run (with gem 'table_print')
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`tp Dog.all`
+`tp Dogsitter.all`
+`tp Stroll.all`
+`tp City.all`
